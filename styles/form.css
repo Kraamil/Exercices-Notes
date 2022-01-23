@@ -1,0 +1,130 @@
+
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: darkslateblue;
+}
+
+
+
+form {
+    margin: 1em;
+    padding: 1em;
+    width: 70vw;
+    min-height: 30vh;
+    border-radius: 15px;
+    background-image: linear-gradient(to left, rgb(184, 255, 246), rgb(197, 234, 255));
+}
+
+#titre-formulaire {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#form-instruction {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#formulaire {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    width: 10vw;
+
+}
+
+#submit:hover{
+    font-weight: bold;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin: 0.5em;
+}
+
+#passwords {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#tableau {
+    margin: 1em;
+    padding: 1em;
+    width: 70vw;
+    height: fit-content;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgb(184, 255, 246), rgb(197, 234, 255));
+    
+}
+
+
+
+
+
+
+table, th, td {
+    
+    border: 1px solid black;
+    border-radius: 2px;
+    
+    width: 11.3vw;
+    border-spacing: 0;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: separate;
+    overflow: hidden;
+    
+}
+
+table, th, td #categories{
+    
+    font-weight: bold;
+    text-align: center;
+    font-weight: 20px;
+    
+}
+
+.hash {
+    
+    overflow-x: scroll;
+    
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/form.css">
+    
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1><a href="../index.html">Inscription au cours de William Gaudelier</a> </h1>
+    <form onsubmit="return false" id="formulaire">
+        <p id="titre-formulaire">Formulaire</p>
+        <label for="username">Pseudo (*) : <input type="text" id="username" name="username" placeholder="Rekkles" required ></label>
+        <label for="age">Age : <input type="number" id="age" name="age" placeholder="25" min="16"></label>
+        <div id="passwords">
+            <label for="password">Mot de passe (*) : <input type="password" id="password" name="password" required placeholder="Mot de passe" minlength="4"></label>
+            <label for="password-confirmation">Confirmer mot de passe (*) : <input type="password" id="password-confirmation" name="password-conf" required placeholder="Confirmer mot de passe" minlength="4"> </label>
+        </div>
+        <p id="form-instruction">Les champs notés par (*) sont requis.</p>
+        <input type="submit" id="submit" name="Envoyer">
+    </form>
+
+    <div id="tableau">
+        <table id="table">
+            <tr id="categories">
+                <td>ID</td>
+                <td>Pseudo</td>
+                <td>Age</td>
+                <td>Date et Heure Envoi</td>
+                <td>Hash MDP</td>
+                <td>Supprimer</td>
+            </tr>
+        </table>
+    </div>
+    <script src="../scripts/form.js"></script>
+
+</body>
+    
+</html>

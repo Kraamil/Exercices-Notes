@@ -1,0 +1,289 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content:flex-end ;
+    flex-direction: row-reverse;
+    overflow-y: scroll;
+}
+
+h1 {
+    
+    font-weight: bold;
+    font-size: 50px;
+    width: 75vw;
+    height: 10vh;
+    
+}
+
+#title {
+    display: flex;
+    text-align: center;
+    
+    flex-direction: column;
+    animation: 4s slide-from-right;
+}
+
+a {
+    text-decoration: none;
+    color: #494E5F;
+}
+
+a:hover {
+    color: darkslateblue;
+}
+
+#left-header {
+    height: 100vh;
+    width: 25vw;
+    background-color: #494E5F;
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    flex-direction: column;
+
+    animation: 1.5s slide-from-left;
+    
+}
+
+#photo-cv {
+    margin: 3.5em;
+    border-radius: 15px;
+    
+    animation: 4s slide-from-left;
+}
+
+
+.name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    overflow: hidden;
+    
+    text-align: center;
+    
+    
+    animation: 5s slide-from-right;
+    color: #FFE7D4;
+    
+}
+
+#étu {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+    
+    
+    animation: 6s slide-from-left;
+    color: #FFE7D4;
+}
+
+.uni {
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    overflow: hidden;
+    text-align: center;
+    
+    
+    animation: 5s slide-from-right;
+    color: #FFE7D4;
+}
+
+#campus {
+    font-size: 20px;
+}
+
+hr {
+    height: 3px;
+    background-color: #FFE7D4;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#right-header {
+    height: 100vh;
+    width: 75vw;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+#programming-language {
+    color: #494E5F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 73vw;
+    height: 10vh;
+    background-color: #BDB7B3;
+    border-radius: 15px;
+    animation: 6s slide-from-right;
+}
+
+.icon {
+    margin-top: 0.5em;
+    width: 5.5%;
+    height: 70%;
+    
+    
+}
+
+#icon-c {
+    
+    animation: slide-from-top 1s;
+}
+
+#icon-py {
+    animation: slide-from-bottom 3s;
+}
+
+#icon-html-css {
+    width: 11%;
+    height: 70%;
+    animation: slide-from-top 4s;
+}
+
+
+#icon-js {
+    animation: slide-from-bottom 6s;
+    
+}
+
+#icon-sql {
+    width: 11%;
+    height: 70%;
+    animation: slide-from-top 7s;
+}
+
+#language {
+    margin-top: 1.5em;
+    color: #494E5F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0.5em;
+    
+    width: 73vw;
+    height: 10vh;
+    background-color: #BDB7B3;
+    border-radius: 15px;
+    animation: slide-from-left 7s;
+}
+
+#language > p {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    margin-left: 2.9em;
+}
+
+
+#projet {
+    margin-left: 0.5em;
+    width: 73vw;
+    height: 55vh;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #BDB7B3;
+    border-radius: 15px;
+    display: flex;
+    color: #494E5F;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column; 
+    animation: 10s slide-from-right;
+}
+
+#projet > p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+table, th, tr {
+    text-align: center;
+    table-layout: fixed;
+    width: 73vw;
+    animation: 6s slide-from-bottom;
+    
+}
+
+table, th, tr .project-title {
+    font-weight: bold;  
+    font-size: 25px;
+}
+
+table, th, tr .project-description {
+    font-weight: normal;  
+    font-size: 20px;
+    height: 30vh;
+}
+
+@keyframes slide-from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-20vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes slide-from-right {
+    from {
+        opacity: 0;
+        transform: translateX(20vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-from-top {
+    from {
+        transform: translateY(-20vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-from-bottom {
+    from {
+        transform: translateY(20vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
